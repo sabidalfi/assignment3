@@ -7,7 +7,7 @@ class assignment3 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title:  Text("Courses"),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.orangeAccent,
         centerTitle: true,
       ),
       body: Padding(
@@ -21,6 +21,7 @@ class assignment3 extends StatelessWidget {
             buildCourseCard(
               "assets/js2.PNG",
               "Full Stack Web Development with JavaScript (MERN)",
+
             ),
             buildCourseCard(
               "assets/django.PNG",
@@ -58,8 +59,8 @@ class assignment3 extends StatelessWidget {
             child: Image.asset(
               imagePath,
               height: 120,
-              width: double.infinity,
-              fit: BoxFit.cover,
+              width: double.maxFinite,
+              fit: BoxFit.fitHeight,
             ),
           ),
           SizedBox(height: 8),
